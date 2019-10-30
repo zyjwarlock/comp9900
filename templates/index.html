@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- meta -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
+    <meta name="keywords" content="course assistant"/>
+    <meta name="description" content="This is a NLP chatbot project.">
+
+    <!-- Add Your favicon here -->
+    <link rel="icon" href="{{ static_url('img/favicon/favicon-32x32.png') }}">
+
+    <!-- Title -->
+    <title>Tiger Chatbot</title>
+
+    <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Montserrat:400,700'  />
+
+    <!-- Boostrap Custom / Addons Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="{{ static_url('plugins/bootstrap/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ static_url('plugins/material_icon/icon.css') }}" />
+
+    <!-- Required CSS file for CSS Chat Panels element -->
+    <link rel="stylesheet" type="text/css" href="{{ static_url('plugins/perfect-scrollbar/css/perfect-scrollbar.min.css') }}" />
+    <link rel="stylesheet" type="text/css" media="all" href="{{ static_url('css/chat_box.css') }}" />
+  </head>
+
+  <body>
+    <!-- PAGE CONTENT BEGINS -->
+    <div class="container perfect_scrollbar" id="container">
+      <div class="pvr_chat_button">
+          <i class="material-icons">chat</i>
+          <span>Helper</span>
+      </div>
+      
+      <div class="pvr_chat_wrapper">
+        {% module Template("message.html", show_comments=False) %}
+      </div>
+    </div>
+
+    <script type="text/javascript" src="{{ static_url('plugins/jquery/jquery-3.2.1.min.js' ) }}" ></script>
+    <script type="text/javascript" src="{{ static_url('plugins/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js' ) }}" ></script>
+    <script type="text/javascript" src="{{ static_url('plugins/backstretch/backstretch.js' ) }}" ></script>
+    <script type="text/javascript" src="{{ static_url('js/app.js') }}" ></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<div class="pvr_chat_content">
+    <div class="close_chat">
+        <i class="material-icons">close</i>
+    </div>
+    
+    <div class="chat_header">
+        <div class="pvr-user-w with-status status-green">
+            <div class="pvr-user-avatar-w">
+                <div class="user-avatar">
+                    <img alt="" src="{{ static_url('img/avatar/bot-avatar.png') }}">
+                </div>
+            </div>
+            <div class="user-name">
+                <h6 class="user-title">
+                    <a href="" target="_blank">Hua Hua</a>
+                </h6>
+                <div class="user-role">
+                    Tiger Bot
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="chat-messages theme_2">
+        <div class="date-break">
+            <script type = "text/javascript">
+                var dt = new Date();
+                document.write((dt.getMonth()+1) + '-' + dt.getDate() + ' ' + dt.getHours() + ':' + dt.getMinutes()); 
+            </script>
+        </div>
+        <div class="message">
+            <div class="message-content">
+                Hi,I am Comp 9021's assistant.
+            </div>
+            <hr/>
+            <div>
+                <button id="class_time" type="button" class="btn-sm btn-outline-primary">Class Time</button>
+                <button id="class_loc" type="button" class="btn-sm btn-outline-secondary">Class Location</button>
+                <button id="lab_time" type="button" class="btn-sm btn-outline-success">Lab Time</button>
+                <button id="exam_info" type="button" class="btn-sm btn-outline-danger">Exam Info</button>
+            </div>
+        </div>
+        <!--
+        <div class="message self">
+            <div class="message-content">
+            </div>
+        </div>
+        -->
+    </div>
+    
+    <div class="chat-controls">
+        <input class="message-input" id="message-input" placeholder="Type your message here..." type="text" x-webkit-speech/>
+        <div class="chat-extra">
+            <!--<a href="#" class="send_voice">-->
+                <!--<span class="extra-tooltip">Send voice message</span>-->
+                <!--<i id="record" class="material-icons">record_voice_over</i>-->
+            <!--</a>-->
+            <!--<a id="download">Download</a>-->
+            <a href="#" class="send_chat">
+                <span class="extra-tooltip">Send chat message</span>
+                <i class="material-icons">send</i>
+            </a>
+        </div>
+    </div>
+</div>
+
